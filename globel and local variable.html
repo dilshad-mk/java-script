@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+const global_variable = "its a global variable <br>";
+function glvar (){
+  console.log(global_variable);
+  document.writeln(global_variable);
+}
+glvar();
+
+function local_var (){
+  const localvar = 'its a local var';
+  console.log(localvar);
+  document.writeln(localvar);
+}
+local_var();
+  </script>
+</body>
+</html>

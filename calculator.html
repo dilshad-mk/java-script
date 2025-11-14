@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=prompt("enter an operator:");
+        let x=prompt("enter first value:");
+        let y=prompt("enter second value:");
+
+        switch (a){
+            case ("+"):
+                  const  sum =Number(x) + Number(y);
+                document.writeln("sum is:"+sum);
+                break;
+            case ("-"):
+            const sub = x - y;
+                document.writeln("substractin is:", sub);
+                break;
+            case ("*"):
+                mul = x * y;
+                document.writeln("product is:",mul);
+                break;
+            case ("/"):
+                div = x / y;
+                document.writeln("division is:",div);
+                break;
+            case ("%"):
+                mod = x % y;
+                document.writeln("modulus is:",mod);
+                break;
+           
+                default:
+                    document.writeln("chose a valid number")
+        }
+    </script>
+</body>
+</html>

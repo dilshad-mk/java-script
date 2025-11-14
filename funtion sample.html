@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumoftwonum () {
+            let a = 10,b = 3;
+            sum = a + b;
+            console.log('sum is:',sum);
+            document.writeln('sum is:',sum , "<br>");
+        
+        }
+        sumoftwonum();
+
+        function maximum_of_two_num ()
+        {
+            let a = 200, b = 2003;
+            document.writeln('numbers are:',a,",", b, "<br>")
+            if(a<b){
+                console.log("maximum is :" ,b);
+                document.writeln("maximum is :" ,b);
+            }
+            else{
+                console.log("maximum is:",a);
+                document.writeln('maximum is:',a),"<br>";
+            }
+        }
+        maximum_of_two_num();
+
+        function even_or_odd (){
+            let a = 10;
+            if(a % 2 == 0){
+                document.writeln(a,"is even number" ,"<br>");
+                console.log(a,"is even number");
+            }
+
+        }
+        even_or_odd();
+
+
+        function square_of_a_number (){
+            let b = 10;
+            let power = b * b;
+            console.log('square of ',b,'is',power);
+            document.writeln('square of ', b,' is ', power ,"<br>");
+        }
+        square_of_a_number();
+
+function factorial(n) {
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+
+console.log(factorial(5)); // Output: 120
+document.writelnig(factorial(5)); // Output: 120
+
+
+    </script>
+</body>
+</html>
