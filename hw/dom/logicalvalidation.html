@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Username" name="" id="user">
+    <input type="number" placeholder="Password" name="" id="pwd">
+    <button onclick="login()">Login</button>
+
+    <script>
+            let login=()=>{
+                let pwd= document.getElementById("pwd").value;
+                let user=document.getElementById("user").value;
+                if(user === "admin" && pwd === "1234"){
+                    alert("login Success")
+                }
+                else{
+                      alert("login Fail : incorrect password")
+                }
+            }
+    </script>
+</body>
+</html>
+

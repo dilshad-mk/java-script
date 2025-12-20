@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter number 2 " id="num1">
+    <input type="number" placeholder="Enter number 1 " id="num2">
+    <button onclick="result()">get result</button>
+  <textarea name="" id="result"></textarea>
+    <script>
+            function result(){
+                let num1=Number(document.getElementById('num1').value);
+                let num2=Number(document.getElementById('num2').value);
+                let reminder= num1%num2
+                document.getElementById('result').innerHTML=reminder;
+
+            }
+    </script>
+</body>
+</html>

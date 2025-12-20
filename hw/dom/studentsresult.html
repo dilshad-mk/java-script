@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" placeholder="English" id="sub1">
+    <input type="number" name="" placeholder="Maths" id="sub2">
+    <input type="number" name="" placeholder="Physics" id="sub3">
+    <button onclick="mark()">get result</button> <br>
+    <textarea name="" id="result"></textarea>
+
+    <script>
+         let mark=()=>{
+            let sub1=Number(document.getElementById("sub1").value);
+            let sub2=Number(document.getElementById("sub2").value);
+            let sub3=Number(document.getElementById("sub3").value);
+            let result;
+            let sum =sub1+sub2+sub3;
+
+            if(sum>=80){
+                document.getElementById("result").innerHTML="Grade : A"
+            }
+            else if(sum>=60){
+                  document.getElementById("result").innerHTML="Grade : B"
+            }
+            else if(sum>=50){
+                  document.getElementById("result").innerHTML="Grade : C"
+            }
+            else{
+                  document.getElementById("result").innerHTML="Grade : Fail"
+
+            }
+         }
+
+    </script>
+</body>
+</html>

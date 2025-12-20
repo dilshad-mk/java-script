@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" placeholder="num1" name="" id="num1">
+    <input type="number" name="" placeholder="num2" id="num2">
+    <button id="sumb" onclick="prinsum()">print sum</button>
+    <textarea name="" id="result"></textarea>
+
+    <script>
+        // let a=prompt("enter first number ");
+        // let b=prompt("enter 2nd number ");
+        // let sum = a+b;
+      
+    
+        function prinsum(){
+    
+          let a =Number(document.getElementById('num1').value)
+        let b = Number(document.getElementById('num2').value)
+                sum = a+b;
+           document.getElementById('result').innerHTML = sum;
+
+        // document.writeln(sum)
+
+        }
+  
+     
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<p id="number">0</p>
+<button id="increment_num" onclick="increment()"> click</button>
+
+    <script>
+        function increment (){
+            let num = Number(document.getElementById('number').textContent);
+         num ++;
+         document.getElementById('number').innerHTML= num;
+
+        }
+    </script>
+</body>
+</html>
