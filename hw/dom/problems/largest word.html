@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter a sentence" id="sentence">
+    <button onclick="getword()">
+        Click
+    </button>
+    <textarea name="" id="result"></textarea>
+
+    <script>
+   let getword=()=>{
+    let sentence=document.getElementById("sentence").value;
+    let word=sentence.split(" ");
+    let longest="";
+    for (let words of word){
+        if(words.length>longest.length){
+            longest=words
+        }
+
+    }
+    document.getElementById("result").value=longest;
+   }
+
+    </script>
+</body>
+</html>
