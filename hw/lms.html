@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <h1 class="heading">What to buy</h1>
+        <p title="a gentle reminder">Dont forget to buy this stuff.</p>
+        <ul id="purchase">
+            <li>A tin of beans</li>
+            <li> Cheese</li>
+            <li>Milk</li>
+            <li>butter</li>
+        </ul>
+    </div>
+
+    <script>
+        const headingElement = document.getElementById('parent');
+        console.log(headingElement);
+
+        const listItems = document.getElementsByTagName("li")
+        console.log(listItems);
+
+        const purchaseList = document.querySelector("#purchase");
+        console.log(purchaseList);
+
+        const allItems = document.querySelectorAll("li");
+        allItems.forEach((item)=>{
+            console.log(item.textContent)
+        })
+    </script>
+</body>
+</html>

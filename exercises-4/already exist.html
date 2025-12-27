@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="val" placeholder="enter number to search">
+    <button onclick="find()">click</button>
+  <textarea name="" id="result"></textarea>
+
+    <script>
+
+function find() {
+    let arr = [123, 3232, 44, 223];
+    let val = Number(document.getElementById("val").value);
+    // let found ;
+
+    for (let ele of arr) {
+        if (ele === val) {
+            // found = true;
+            document.getElementById("result").value="found"
+            break;
+        }
+        else{
+               document.getElementById("result").value=" not found"
+               break;
+        }
+    }
+
+    
+}
+
+
+      
+    </script>
+</body>
+</html>
