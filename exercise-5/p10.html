@@ -1,0 +1,25 @@
+<!-- Using querySelectorAll, change the background color of all elements with class menu-item. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="menu">adsf</p>
+    <p class="menu">dsf</p>
+    <p class="menu">ff</p>
+    <p class="menu">fds</p>
+
+
+     <script>
+        let menu_item=document.querySelectorAll(".menu");
+        for(i=0;i<menu_item.length;i++){
+            menu_item[i].style.backgroundColor="red";
+        }
+     </script>
+</body>
+</html>

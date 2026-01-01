@@ -1,0 +1,23 @@
+<!-- /Using getElementsByClassName, hide all elements with class hide-box -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <div class="hide_box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati pariatur atque vero, esse minus quam at animi corporis accusantium soluta nisi, reiciendis rerum id voluptatem repellat! Quasi adipisci alias aut!</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dolorem culpa vero labore dignissimos excepturi tempore, voluptas hic non quos consequatur molestias numquam, ad corrupti officiis quis aspernatur ipsam ipsa.</p>
+    </div>
+<script>
+    let hide=document.getElementsByClassName("hide_box");
+   for(i=0;i<hide.length;i++){
+    hide[i].style.display="none"
+   }
+</script>
+ </body>
+ </html>

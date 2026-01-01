@@ -1,0 +1,21 @@
+<!-- Change the text of all buttons having class btn to "Clicked". -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <button class="btn">click</button><button class="btn">click</button><button class="btn">click</button><button class="btn">click</button><button class="btn">click</button>
+
+    <button>hi</button><button>hi</button>
+
+    <script>
+        let click=document.getElementsByClassName("btn");
+        for(i=0;i<click.length;i++){
+            click[i].innerHTML="clicked"
+        }
+    </script>
+ </body>
+ </html>

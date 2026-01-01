@@ -1,0 +1,20 @@
+<!-- Count how many <img> tags are present on the page. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+    <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+
+    <script>
+        let img_tag_count=document.getElementsByTagName("img");
+        let count=0;
+        count = img_tag_count.length;
+        document.write("img tag count:",count);
+    </script>
+ </body>
+ </html>
